@@ -1,0 +1,118 @@
+<!--
+Student Info: Chris Sequeira (14863759)
+Description: XML file to load suburbs in booking.htm dropdowns
+
+-->
+<suburblist>
+	<suburb>Airport Oaks</suburb>
+	<suburb>Albany</suburb>
+	<suburb>Alfriston</suburb>
+	<suburb>Ardmore</suburb>
+	<suburb>Auckland CBD</suburb>
+	<suburb>Auckland waterfront</suburb>
+	<suburb>Avondale</suburb>	
+	<suburb>Balmoral</suburb>
+	<suburb>Bayswater</suburb>
+	<suburb>Belmont</suburb>
+	<suburb>Birkenhead</suburb>
+	<suburb>Blockhouse Bay</suburb>
+	<suburb>Botany Downs</suburb>
+	<suburb>Browns Bay</suburb>
+	<suburb>Bucklands Beach</suburb>
+	<suburb>Chapel Downs</suburb>
+	<suburb>Clendon Park</suburb>
+	<suburb>Clevedon</suburb>
+	<suburb>Clover Park</suburb>
+	<suburb>Cockle Bay</suburb>
+	<suburb>Conifer Grove</suburb>
+	<suburb>Dannemora</suburb>
+	<suburb>Devonport</suburb>
+	<suburb>East Tamaki</suburb>
+	<suburb>Eden Terrace</suburb>
+	<suburb>Clevedon</suburb>
+	<suburb>Ellerslie</suburb>
+	<suburb>Epsom</suburb>
+	<suburb>Favona</suburb>
+	<suburb>Flat Bush</suburb>
+	<suburb>Freemans Bay</suburb>
+	<suburb>The Gardens</suburb>
+	<suburb>Glen Eden</suburb>
+	<suburb>Glen Innes</suburb>
+	<suburb>Glendowie</suburb>
+	<suburb>Glenfield</suburb>
+	<suburb>Goodwood Heights</suburb>
+	<suburb>Grafton</suburb>
+	<suburb>Green Bay</suburb>
+	<suburb>Greenlane</suburb>
+	<suburb>Grey Lynn</suburb>
+	<suburb>Half Moon Bay</suburb>
+	<suburb>Hauraki</suburb>
+	<suburb>Henderson</suburb>
+	<suburb>Herne Bay</suburb>
+	<suburb>Highbrook</suburb>
+	<suburb>Highbury</suburb>
+	<suburb>Highland Park</suburb>
+	<suburb>Hillcrest</suburb>
+	<suburb>Hillsborough</suburb>
+	<suburb>Hobsonville</suburb>
+	<suburb>Homai</suburb>
+	<suburb>Howick</suburb>
+	<suburb>Huia</suburb>
+	<suburb>Kelston</suburb>
+	<suburb>Lincoln</suburb>
+	<suburb>Lynfield</suburb>	
+	<suburb>Māngere</suburb>
+	<suburb>Manukau</suburb>
+	<suburb>Manurewa</suburb>
+	<suburb>Massey</suburb>
+	<suburb>Meadowbank</suburb>
+	<suburb>Middlemore</suburb>
+	<suburb>Milford</suburb>
+	<suburb>Mission Bay</suburb>
+	<suburb>Mount Albert</suburb>
+	<suburb>Mount Eden</suburb>
+	<suburb>Mount Wellington</suburb>
+	<suburb>New Lynn</suburb>
+	<suburb>Newmarket</suburb>
+	<suburb>North Harbour</suburb>
+	<suburb>Northcote</suburb>
+	<suburb>One Tree Hill</suburb>
+	<suburb>Onehunga</suburb>
+	<suburb>Orakei</suburb>
+	<suburb>Otahuhu</suburb>
+	<suburb>Ōtara</suburb>
+	<suburb>Kelston</suburb>
+	<suburb>Lincoln</suburb>
+	<suburb>Lynfield</suburb>
+	<suburb>Pakuranga</suburb>
+	<suburb>Panmure</suburb>
+	<suburb>Papakura</suburb>
+	<suburb>Papatoetoe</suburb>
+	<suburb>Parnell</suburb>
+	<suburb>Penrose</suburb>
+	<suburb>Point Chevalier</suburb>
+	<suburb>Ponsonby</suburb>
+	<suburb>Red Hill</suburb>
+	<suburb>Remuera</suburb>
+	<suburb>Rosebank</suburb>
+	<suburb>Rosedale</suburb>
+	<suburb>Rosehill</suburb>
+	<suburb>Mount Roskill</suburb>
+	<suburb>Royal Oak</suburb>
+	<suburb>Saint Heliers</suburb>
+	<suburb>Sandringham</suburb>
+	<suburb>Sunnyvale</suburb>
+	<suburb>Swanson</suburb>
+	<suburb>Takanini</suburb>
+	<suburb>Takapuna</suburb>
+	<suburb>Te Atatu</suburb>
+	<suburb>Te Papapa</suburb>
+	<suburb>Three Kings</suburb>
+	<suburb>Titirangi</suburb>
+	<suburb>Totara Heights</suburb>	
+	<suburb>Wattle Downs</suburb>
+	<suburb>Western Heights</suburb>
+	<suburb>Western Springs</suburb>
+	<suburb>Westfield</suburb>
+	<suburb>Westgate</suburb>
+</suburblist>

@@ -1,0 +1,36 @@
+body {
+  font-family:Arial,Helvettica,sans-serif;
+  background-color: white;
+  
+}
+
+h1{
+	color: white;
+	font-family: Georgia, serif;
+}
+ 
+.navbar, .navbar-default{
+    background-color: #FF851B;
+	height: 90px;
+	color: #000;
+	margin-bottom: 0px;
+	padding-left: 200px;	
+}
+
+.container {
+	margin-top: 100px;
+	padding-top: 50px;	
+	text-align: center;
+	border: 3px solid black;
+}
+
+.formwrap {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #f5f5f0;
+	width: 75%;
+}

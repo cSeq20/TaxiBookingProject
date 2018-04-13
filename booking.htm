@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking</title>
+	<script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="booking.js"> </script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	
+<!-- datepicker -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<!-- Timepicker -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+	
+	<script>
+	/*
+		Function to load suburbs.xml to dropdown lists
+	*/
+		$(document).ready(function(){
+			$.ajax({
+				type: "GET",
+				url: "suburbs.xml",
+				dataType: "xml",
+				success: function(xml) {
+					var select = $('#dest');
+					var subselect = $('#sublist');
+					
+					$(xml).find('suburblist').each(function(){
+						$(this).find('suburb').each(function(){							
+							var label = $(this).text();
+							select.append("<option value='"+ label +"'>"+label+"</option>");
+							subselect.append("<option value='"+ label +"'>"+label+"</option>");
+						});
+					});
+				}	// success close
+			});
+		});
+		
+		$( function() {
+			$( "#datepicker" ).datepicker({dateFormat: 'dd-mm-yy', minDate: new Date()})
+			.datepicker('setDate', new Date());
+		} );
+		
+		$( function() {
+			$( "#timepicker").timepicker({
+				timeFormat: 'HH:mm',
+				minTime: '07:00 am',
+				interval: 15,
+				dropdown: true,
+				scrollbar: true
+				
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<h1>Make a Booking</h1>
+		</div>
+	</nav>	
+	<div class="formwrap">
+		<form>
+	    	<div class="form-group">
+				<label>Customer Name: </label>
+				<input class="form-control" type="text" name="namefield" pattern="[A-Za-z]" title="Alphabet only">
+			</div>
+			<div class="form-group">
+				<label><br>Phone: </label>
+				<input class="form-control" type="text" name="phnfield">
+			</div>
+			<label>Pick-up Address: </label>
+			<div class="form-group">				
+				<label>Street Number: </label>
+				<input class="form-control" type="text" name="strtNumfield">
+			</div>
+			<div class="form-group">
+				<label>Street Name: </label>
+				<input class="form-control" type="text" name="strtNamefield">
+			</div>
+			<div class="form-group">
+				<label>Suburb:  </label>
+				<select class="form-control" id="sublist" name="suburbfield">		
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Destination: </label>
+				<select class="form-control" id="dest" name="destfield">
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Pick-up Time: </label>
+				<input class="timepicker form-control" id="timepicker" readonly="readonly" type="text" name="pckUpTimefield">
+			</div>
+			<div class="form-group">
+				<label>Pick-up Date: </label>
+				<input class="dpicker form-control" type="text" id="datepicker" name="pckUpDatefield"><br><br> </label>
+		 	</div>			
+			<button class="btn btn-default btn-block" name="submit" onClick = "getData('processBooking.php','targetDiv', namefield.value, phnfield.value, strtNumfield.value, strtNamefield.value,
+				suburbfield.value, destfield.value, pckUpTimefield.value, pckUpDatefield.value) " >Book a taxi</button>			
+		</form>
+		<div id="wrapper" style="text-align: center; margin-bottom: 50px;">
+			<div id="targetDiv" class="targetDiv" style="display: inline-block;"> 	   
+			</div> 
+		</div>
+	</div>
+</body>
+</html>
+
+
+

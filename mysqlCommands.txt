@@ -1,0 +1,18 @@
+Chris Sequeira (14863759)
+This is my command used to create the database table.
+
+"CREATE TABLE taxibooking (
+bkNum INT(11) AUTO_INCREMENT PRIMARY KEY,
+cusName VARCHAR(25) NOT NULL,
+phone VARCHAR(20) NOT NULL,
+pkUpAddress VARCHAR(100),
+suburb VARCHAR(50),
+destSuburb VARCHAR(50),
+pkDate date,
+pkTime time,
+bkDate VARCHAR(10),
+bkTime VARCHAR(10),
+status VARCHAR(15),
+)";
+
+
